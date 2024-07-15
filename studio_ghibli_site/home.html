@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	    <title>Studio Ghibli</title> 
+
+	    <style type="text/css">
+	    	body
+	    	{
+	    		margin-bottom: 500px;
+	    	}
+
+	    </style>
+
+
+	    <link href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+	    <link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<div class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+
+				<a href = "home.html" class = "navbar-brand">
+					<img src="logo.jpg" width="200">
+				</a>
+
+				<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+					<span class = "icon-bar"></span>
+				</button>
+
+				<div class = "collapse navbar-collapse navHeaderCollapse">
+					<ul class = "nav navbar-nav navbar-right panel-body">
+						<li><a href = "file:///Users/ananya/Desktop/studio_ghibli_site/articalone.html">News</a></li>
+						<li class = "dropdown">
+			 				<a href = "#" class = "dropdown-toggle" data-toggle = "dropdown">Social Media<b class = "caret"></b></a>
+							<ul class = "dropdown-menu">
+								<li><a href = "https://x.com/ghibliusa?lang=en">X (Twitter)</a></li>
+								<li><a href = "https://www.facebook.com/GhibliUSA/">Facebook</a></li>
+								<li><a href = "https://www.instagram.com/ghibliusa/">Instagram</a></li>
+								<li><a href = "https://letterboxd.com/studio/studio-ghibli/">Letterboxd</a></li>
+							</ul>
+						<li><a href = "films.html">Films</a></li>
+						<li><a href = "#contact" data-toggle = "modal">Contact Us</a></li>					
+					</ul>	
+				</div>		
+			</div>
+		</div>
+
+		<div class = "container">
+			<div class = "jumbotron">
+				<center><h1>Studio Ghibli</h1>
+				<p> creating animated films since 1985</p>
+				<a href = "films.html" class = "btn btn-default">Films</a>
+			</div>
+		</div>
+
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  						<!-- Indicators -->
+  			<ol class="carousel-indicators">
+    			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    			<li data-target="#myCarousel" data-slide-to="1"></li>
+    			<li data-target="#myCarousel" data-slide-to="2"></li>
+  			</ol>
+
+  			<div class="carousel-inner">
+    			<div class="item active">
+      				<img src="boy.jpg" alt="boyandheron">
+      					<div class="carousel-caption">
+      						<h3>Miyazaki’s Latest (and Last?) Film: The Boy and the Heron</h3>
+							<a href = "#" class = "btn btn-default">Read More</a>
+      					</div>
+    			</div>
+
+   				<div class="item">
+      				<img src="ponyofinal.jpg" alt="ponyo" width = 100%>
+      					<div class="carousel-caption">
+      						<h3>Bring the Food of Ponyo to Life With Newly Released Donburi Bowl</h3>
+							<a href = "#" class = "btn btn-default">Read More</a>
+                		</div>
+    			</div>
+
+    			<div class="item">
+     				<img src="two.jpg" alt="princess">
+      					<div class="carousel-caption">
+      						<h3>Princess Mononoke Returns to Theaters</h3>
+							<a href = "#" class = "btn btn-default">Read More</a>
+      					</div>
+    			</div>
+  			</div>
+
+  			<a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    			<span class="glyphicon glyphicon-chevron-left"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="right carousel-control" href="#myCarousel" data-slide="next">
+    			<span class="glyphicon glyphicon-chevron-right"></span>
+   				<span class="sr-only">Next</span>
+  			</a>
+		</div>
+
+
+
+		<div class = "navbar navbar-inverse navbar-fixed-bottom">
+			<div class = "container">
+				<p class = "navbar-text pull-left"> site built by Ananya Mandrekar</p>
+				<a href = "https://ghiblicollection.com/" class = "navbar-btn btn-danger btn pull-right"> Offical GKIDS Website</a>
+			</div>	
+		</div>
+
+		<div class = "modal fade" id = "contact" role = "dialog">
+			<div class = "modal-dialog">
+				<div class = "modal-content">
+					<form class = "form-horizontal">
+						<div class = "modal-header">
+							<h4>Contact Tech Site</h4>
+						</div>
+
+
+						<div class = "modal-body">
+							<div class = "form-group">
+								<label for = "contact-name" class = "col-lg-2 control-label">Name:</label>
+								<div class = "col-lg-10">
+									<imput type = "text" class = "form-control"id = "contact-name" placeholder = "Full Name">
+								</div>
+							</div>
+							<div class = "form-group">
+								<label for = "contact-email" class = "col-lg-2 control-label">Email:</label>
+								<div class = "col-lg-10">
+									<input type = "email" class = "form-control"id = "contact-email" placeholder = "you@example.com">
+								</div>
+							</div>
+							<div class = "form-group">
+								<lable for = "contact-message" class = "col-lg-2 control-label">Message:</lable>
+								<div class = "col-lg-10">
+									<textarea class = "form-control" rows = "8"></textarea>
+								</div>
+							</div>
+						</div>
+						<div class = "modal-footer">
+							<a class = "btn btn-default" data-dismiss = "modal">Close</a>
+							<button class = "btn btn-primary" type = "submit">Send</button>
+						</div>	
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+			<div class = "container">
+				<p class = "navbar-text pull-left"> Site Built by Ananya Mandrekar</p>
+					<a href = "https://ghiblicollection.com/" class = "navbar-btn btn-info btn pull-right"> Offical Website</a>
+			</div>	
+		</div>
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script src = "https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js">	</script>
+	</body>
+</html>
